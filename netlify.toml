@@ -1,0 +1,12 @@
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/play/*"
+  to = "/.netlify/functions/play?id=:splat"
+  status = 200
+
+[[redirects]]
+  from = "/playlist.m3u8"
+  to = "/.netlify/functions/playlist"
+  status = 200
